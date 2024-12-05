@@ -2,6 +2,7 @@
   "name": "react-market-display",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://MostafaZrour.github.io/react-market-display",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -42,6 +43,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  },
-  "homepage": "https://MostafaZrour.github.io"
+  }
 }

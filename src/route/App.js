@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "./pages/Layout";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -10,9 +9,11 @@ import ProductList from "../store/ProductList";
 import Container from "../tp1/Container";
 import Form from "../Forms/Form"
 
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Container />} />
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="*" element={<_404 />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
+
